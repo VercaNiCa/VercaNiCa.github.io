@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: VercaNiCa/VercaNiCa.github.io  # Twój GitHub repo
+  branch: main  # lub master, zależnie co masz
+
+media_folder: "uploads"  # folder na zdjęcia
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Poematy"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Tytuł", name: "title", widget: "string"}
+      - {label: "Treść", name: "body", widget: "markdown"}
