@@ -107,21 +107,21 @@
         </p>
       </div>
     </main>
-
 <div id="disqus_thread"></div>
 <script>
-    var disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = window.location.pathname;
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://vercatime.disqus.com/embed.js';  // <-- zmień 'vercatime' na swój shortname!
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
+  var disqus_config = function () {
+    this.page.url = window.location.href;  // adres strony
+    this.page.identifier = 'poem_page_1'; // unikalny identyfikator strony
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://verca-poem.disqus.com/embed.js';  // <-- tu jest Twój shortname
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
 </script>
 <noscript>Włącz JavaScript, aby zobaczyć komentarze.</noscript>
+
 
 
     <footer>
